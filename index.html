@@ -4,107 +4,398 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexander Goncharov</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background-color: #fff;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 300;
+            color: #1a1a1a;
+            margin-bottom: 40px;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            font-weight: 400;
+            color: #2c3e50;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            font-weight: 500;
+            color: #555;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        .intro {
+            margin-bottom: 30px;
+            font-size: 1.05em;
+        }
+
+        .research-areas {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .research-areas li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .research-areas li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        .research-areas strong {
+            color: #2c3e50;
+        }
+
+        .contact-info {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .contact-info strong {
+            color: #2c3e50;
+            display: inline-block;
+            min-width: 80px;
+        }
+
+        .photo-section {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .photo-section img {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .photo-section p {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+        }
+
+        .publications {
+            list-style: none;
+        }
+
+        .publications li {
+            margin-bottom: 20px;
+            padding-left: 0;
+        }
+
+        .publications strong {
+            color: #2c3e50;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .publication-details {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+
+        .pdf-link {
+            display: inline-block;
+            margin-left: 5px;
+            padding: 2px 8px;
+            background-color: #ecf0f1;
+            border-radius: 3px;
+            font-size: 0.85em;
+            color: #555;
+        }
+
+        .pdf-link:hover {
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.3em;
+            }
+
+            .contact-info {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>Alexander Goncharov</h1>
     
-    <p>I am interested in several areas of Mathematics and Mathematical Physics:</p>
-    <ul>
+    <div class="intro">
+        <p>I am interested in several areas of Mathematics and Mathematical Physics:</p>
+    </div>
+
+    <ul class="research-areas">
         <li><strong>Arithmetic Algebraic Geometry:</strong> L-functions, mixed motives and motivic Galois groups, polylogarithms, periods, Hodge Theory, and other topics.</li>
-        <li><strong>Cluster varieties and Representation theory.</strong></li>
-        <li><strong>Geometry, Quantum higher Teichmuller theory, Quantum Field Theory.</strong></li>
-        <li><strong>Integral Geometry and Tomography.</strong></li>
+        <li><strong>Cluster varieties and Representation theory</strong></li>
+        <li><strong>Geometry, Quantum higher Teichmuller theory, Quantum Field Theory</strong></li>
+        <li><strong>Integral Geometry and Tomography</strong></li>
     </ul>
 
-    <h2>How to reach me</h2>
-    <ul>
-        <li>Department of Mathematics, Yale University,<br>
-        P.O. Box 208283;<br>
-        10 Hillhouse ave, New Haven CT 06520<br>
-        USA</li>
-        <li><strong>E-mail:</strong> alexander.goncharov@yale.edu</li>
-        <li><strong>Phone:</strong> (203) 432-4192 (office)</li>
-        <li><strong>Office:</strong> 212A LOM</li>
+    <h2>Contact</h2>
+    
+    <div class="contact-info">
+        <p>Department of Mathematics, Yale University<br>
+        P.O. Box 208283<br>
+        10 Hillhouse Ave, New Haven, CT 06520<br>
+        USA</p>
+        <p><strong>Email:</strong> alexander.goncharov@yale.edu</p>
+        <p><strong>Phone:</strong> (203) 432-4192</p>
+        <p><strong>Office:</strong> 212A LOM</p>
+    </div>
+
+    <div class="photo-section">
+        <img src="dsc00065.jpg" alt="Alexander Goncharov in Okayama, Japan, 2005">
+        <p>In Okayama, Japan (2005)</p>
+    </div>
+
+    <h2>Selected Talks</h2>
+
+    <h2>Publications</h2>
+    <p style="font-style: italic; color: #666; margin-bottom: 30px;">Publications not available in the arXiv</p>
+
+    <h3>A) Selected publications on zeta-functions, mixed motives, and motivic Galois groups</h3>
+    
+    <ul class="publications">
+        <li>
+            <strong>The classical trilogarithm, algebraic K-theory of fields, and Dedekind zeta functions</strong>
+            <div class="publication-details">
+                BAMS Vol 24, N1, 1991
+                <a href="Ktheory91.pdf" class="pdf-link">PDF</a>
+            </div>
+        </li>
+        
+        <li>
+            <strong>Geometry of configurations, polylogarithms and motivic cohomology</strong>
+            <div class="publication-details">
+                Preprint MPIM (Bonn) 1991. Published in Advances Math. (1995)
+                <a href="4717" class="pdf-link">PDF</a>
+            </div>
+        </li>
+        
+        <li>
+            <strong>Polylogarithms and motivic Galois groups</strong>
+            <div class="publication-details">
+                Proc. Symp Pure Math vol 55 N 2
+                <a href="polylog.pdf" class="pdf-link">PDF</a>
+            </div>
+        </li>
+        
+        <li>
+            <strong>Explicit constructions of characteristic classes</strong>
+            <div class="publication-details">
+                Preprint MPIM (Bonn) 1992
+                <a href="4821" class="pdf-link">PDF</a><br>
+                Advances in Soviet Mathematics, 16, Volume 1, (dedicated to I.M. Gelfand 80th birthday), 169-210, 1993
+                <a href="charclasses.pdf" class="pdf-link">PDF</a>
+            </div>
+        </li>
+        
+        <li>
+            <strong>The classical polylogarithms, algebraic K-theory and zeta-values</strong>
+            <div class="publication-details">
+                The Gelfand mathematical seminars, 1990-1992. L. Corwin, I. Gelfand, J. Lepowsky editors, Birkhäuser 1993, 113-161
+                <a href="AKtheory93.pdf" class="pdf-link">PDF</a>
+            </div>
+        </li>
+        
+        <li>
+            <strong>The double logarithm and Manin's complexes for modular curves</strong>
+            <div class="publication-details">
+                Mathematical Research Letters, 4, 617-636 (1997)
+                <a href="DLMC.pdf" class="pdf-link">PDF</a>
+            </div>
+        </li>
+        
+        <li>
+            <strong>Chow polylogarithms and regulators</strong>
+            <div class="publication-details">
+                Mathematical Research Letters, 2 (1995), no. 1, 95–112
+                <a href="chow.pdf" class="pdf-link">PDF</a>
+            </div>
+        </li>
+        
+        <li>
+            <strong>Mixed elliptic motives</strong>
+            <div class="publication-details">
+                London Math Soc. Lecture Note Series, Volume 254, 147-221, 1998
+                <a href="emc.pdf" class="pdf-link">PDF</a>
+            </div>
+        </li>
     </ul>
 
-    <p><a href="dsc00065.jpg">In Okayama (Japan) in 2005</a></p>
-
-    <h2>Selected talks</h2>
-
-    <h2>Publications not available in the arXive:</h2>
-
-    <h3>A) Selected publications on zeta-functions, mixed motives, and motivic Galois groups:</h3>
-    <ul>
-        <li><strong>The classical trilogarithm, algebraic K-theory of fields, and dedekind zeta functions.</strong><br>
-        BAMS Vol 24, N1, 1991 (<a href="Ktheory91.pdf">pdf</a>)</li>
+    <h3>B) Selected Publications in Geometry and Integral Geometry</h3>
+    
+    <ul class="publications">
+        <li>
+            <strong>Infinitesimal structures related to Hermitian symmetric spaces</strong>
+            <div class="publication-details">
+                Functional Analysis and its applications, 15, 1981, N3, p 83-84
+                <a href="InfinitesimalStructures1981.pdf" class="pdf-link">PDF</a>
+            </div>
+        </li>
         
-        <li><strong>Geometry of configurations, polylogarithms and motivic cohomology.</strong><br>
-        Preprint MPIM (Bonn) 1991. Published in Advances Math. (1995). (<a href="4717">pdf</a>)</li>
+        <li>
+            <strong>Constructions of Weil representations of some simple Lie algebras</strong>
+            <div class="publication-details">
+                Functional Analysis and its applications, 16, 1982, N2, p 70-71
+                <a href="Weil1982.pdf" class="pdf-link">PDF</a>
+            </div>
+        </li>
         
-        <li><strong>Polylogarithms and motivic Galois groups.</strong><br>
-        Proc. Symp Pure Math vol 55 N 2 (<a href="polylog.pdf">pdf</a>)</li>
+        <li>
+            <strong>Generalized Conformal structures on manifolds</strong>
+            <div class="publication-details">
+                Selecta Mathematica Sovietica 6, (1987) N4, 307-340
+                <a href="GenConfStruct87.pdf" class="pdf-link">PDF</a><br>
+                (Russian version: In "Problems in group theory and homological algebra" Yaroslavl Gos. Univ., 1983)
+            </div>
+        </li>
         
-        <li><strong>Explicit constructions of characteristic classes.</strong><br>
-        Preprint MPIM (Bonn) 1992 (<a href="4821">pdf</a>).<br>
-        Advances in Soviet Mathematics, 16, Volume 1, (dedicated to I.M.Gelfand 80th birthday), 169 - 210, 1993: (<a href="charclasses.pdf">pdf</a>)</li>
+        <li>
+            <strong>Integral Geometry on families of k-dimensional submanifolds</strong>
+            <div class="publication-details">
+                Functional Analysis and its applications, 1988, vol 23, N3, p. 11-23
+                <a href="AdnissibleFamilies.pdf" class="pdf-link">PDF</a>
+            </div>
+        </li>
         
-        <li><strong>The classical polylogarithms, algewbraioc K-theory and zeta-values.</strong><br>
-        The Gelfand mathematical seminars, 1990-1992. L.Corwin, I.Gelfand, J.Lepowsky edotirs, Birkhauser 1993, 113-161. (<a href="AKtheory93.pdf">pdf</a>)</li>
+        <li>
+            <strong>Integral Geometry and manifolds of minimal degree in CP^n</strong>
+            <div class="publication-details">
+                Functional Analysis and its applications, 1989, vol 24, N1, p. 5-20
+                <a href="IntegralGeometryManifoldsMinimalDegree.pdf" class="pdf-link">PDF</a>
+            </div>
+        </li>
         
-        <li><strong>The double logarithm and Manin's complexes for modular curves.</strong><br>
-        Mathematical Research Letters, 4, 617-636 (1997) (<a href="DLMC.pdf">pdf</a>)</li>
+        <li>
+            <strong>Integral Geometry on families of surfaces in the space</strong>
+            <div class="publication-details">
+                Journal of Geometry and Physics, 1988, vol 4, N5, p. 571-593
+                <a href="IntegralGeomnetrySurfaces.pdf" class="pdf-link">PDF</a>
+            </div>
+        </li>
         
-        <li><strong>Chow polylogarithms and regulators.</strong><br>
-        Mathematical Research Letters, 2 (1995), no. 1, 95–112. (<a href="chow.pdf">pdf</a>)</li>
+        <li>
+            <strong>Integral geometry and differential equations</strong>
+            <div class="publication-details">
+                Mathematical Research Letters, 1995, vol 2, N 2, 415-435
+                <a href="igdem.pdf" class="pdf-link">PDF</a>
+            </div>
+        </li>
         
-        <li><strong>Mixed elliptic motives.</strong><br>
-        London Math Soc. Lecture Note Series, Volume 254, 147-221, 1998. (<a href="emc.pdf">pdf</a>)</li>
+        <li>
+            <strong>Differential equations and integral geometry</strong>
+            <div class="publication-details">
+                Advances in Math., vol. 131, N2, (1997)
+                <a href="igde.pdf" class="pdf-link">PDF</a>
+            </div>
+        </li>
     </ul>
 
-    <h3>B) Selected Publications in Geometry and Integral Geometry:</h3>
-    <ul>
-        <li><strong>Infinitesimal structures related to Hermitian symmetric spaces.</strong><br>
-        Functional Analysis and its applications, 15, 1981, N3, p 83-84. (<a href="InfinitesimalStructures1981.pdf">pdf</a>)</li>
+    <h3>C) Selected Publications in Tomography</h3>
+    
+    <ul class="publications">
+        <li>
+            <strong>Vainstein B.K., Goncharov A.B.: Determination of the spatial orientation of arbitrarily arranged identical particles of unknown structure from their projections</strong>
+            <div class="publication-details">
+                Doklady Acad. Nauk SSSR, 1986, vol 287, 1131-1134 (April 1986)<br>
+                English translation: Soviet Physics, Doklady 31(4) April 1986, 278-280
+                <a href="Vainstein-Goncharov1986.pdf" class="pdf-link">PDF</a>
+            </div>
+        </li>
         
-        <li><strong>Constructions of Weil representations of some simple Lie algebras.</strong><br>
-        Functional Analysis and its applications, 16, 1982, N2, p 70-71. (<a href="Weil1982.pdf">pdf</a>)</li>
+        <li>
+            <strong>Goncharov A.B.: Methods of integral geometry and finding the relative orientation of identical particles arbitrarily arranged in a plane from their projections onto a straight line</strong>
+            <div class="publication-details">
+                Doklady Acad. Nauk SSSR, 1987, vol 293, 355-358, (March 1987)<br>
+                English translation: Soviet Physics, Doklady 32(3) March 1987, 177-178
+                <a href="tomograph1987.pdf" class="pdf-link">PDF</a>
+            </div>
+        </li>
         
-        <li><strong>Generalized Conformal structures on manifolds</strong><br>
-        Selecta Mathematica Soveitica 6, (1987) N4, 307-340. (<a href="GenConfStruct87.pdf">pdf</a>)<br>
-        (Russian version: In "Problems in group theory and homological algebra" Yaroslavl Gos. Univ., 1983).</li>
+        <li>
+            <strong>Goncharov A.B.: Integral geometry and three dimensional reconstruction of randomly oriented identical particles from their electron micrographs</strong>
+            <div class="publication-details">
+                Acta Applicanda Mathematicae, 1988, 11, p.199-211
+                <a href="IntegralGeomnetryActaApplicanda2.pdf" class="pdf-link">PDF</a>
+            </div>
+        </li>
         
-        <li><strong>Integral Geometry on families of k-dimensional submanifolds.</strong><br>
-        Functional Analysis and its applications, 1988, vol 23, N3, p. 11-23. (<a href="AdnissibleFamilies.pdf">pdf</a>)</li>
-        
-        <li><strong>Integral Geometry and manifolds of minimal degree in CP^n.</strong><br>
-        Functional Analysis and its applications, 1989, vol 24, N1, p. 5-20. (<a href="IntegralGeometryManifoldsMinimalDegree.pdf">pdf</a>)</li>
-        
-        <li><strong>Integral Geometry on families of surfaces in the space.</strong><br>
-        Journal of Geometry and Physics, 1988, vol 4, N5, p. 571-593. (<a href="IntegralGeomnetrySurfaces.pdf">pdf</a>)</li>
-        
-        <li><strong>Integral geometry and differential equations.</strong><br>
-        Mathematical Research Letters, 1995, vol 2, N 2, 415-435. (<a href="igdem.pdf">pdf</a>)</li>
-        
-        <li><strong>Differential equations and integral geometry.</strong><br>
-        Advances in Math., vol. 131, N2, (1997). (<a href="igde.pdf">pdf</a>)</li>
-    </ul>
-
-    <h3>C) Selected Publications in Tomography:</h3>
-    <ul>
-        <li><strong>Vainstein B.K., Goncharov A.B.:</strong><br>
-        Determination of the spatial orientation of arbitrarily arranged identical particles of unknown structure from their projections.<br>
-        Doklady Acad. Nauk SSSR, 1986, vol 287, 1131-1134 (April 1986).<br>
-        English translation: Soviet Physics, Doklady 31(4) April 1986, 278-280. (<a href="Vainstein-Goncharov1986.pdf">pdf</a>)</li>
-        
-        <li><strong>Goncharov A.B.:</strong> Methods of integral geometry and finding the relative orientation of identical particles arbitrarily arranged in a plane from their projections onto a straight line.<br>
-        Doklady Acad. Nauk SSSR, 1987, vol 293, 355-358, (March 1987).<br>
-        English translation: Soviet Physics, Doklady 32(3) March 1987, 177-178. (<a href="tomograph1987.pdf">pdf</a>)</li>
-        
-        <li><strong>Goncharov A.B.:</strong> Integral geometry and three dimensional reconstruction of randomly oriented identical particles from their electron micrographs.<br>
-        Acta Applicanda Mathematicae, 1988, 11, p.199-211. (<a href="IntegralGeomnetryActaApplicanda2.pdf">pdf</a>)</li>
-        
-        <li><strong>Goncharov A.B.:</strong> Methods of integral geometry and recovering a function with compact support from its projections in unknown directions.<br>
-        Acta Applicanda Mathematicae, 1988, 11, p.213-222. (<a href="ActaApplicanda1.pdf">pdf</a>)</li>
+        <li>
+            <strong>Goncharov A.B.: Methods of integral geometry and recovering a function with compact support from its projections in unknown directions</strong>
+            <div class="publication-details">
+                Acta Applicanda Mathematicae, 1988, 11, p.213-222
+                <a href="ActaApplicanda1.pdf" class="pdf-link">PDF</a>
+            </div>
+        </li>
     </ul>
 </body>
 </html>
