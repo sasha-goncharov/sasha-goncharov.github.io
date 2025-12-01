@@ -118,6 +118,30 @@
             font-style: italic;
         }
 
+        .cv-links {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .cv-links a {
+            display: inline-block;
+            margin: 0 15px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }
+
+        .cv-links a:hover {
+            background-color: #2980b9;
+            text-decoration: none;
+        }
+
         .publications {
             list-style: none;
         }
@@ -150,13 +174,16 @@
             text-decoration: underline;
         }
 
-        .pdf-link {
+        .pdf-link, .arxiv-link {
             display: inline-block;
             margin-left: 5px;
             padding: 2px 8px;
-            background-color: #ecf0f1;
             border-radius: 3px;
             font-size: 0.85em;
+        }
+
+        .pdf-link {
+            background-color: #ecf0f1;
             color: #555;
         }
 
@@ -164,6 +191,26 @@
             background-color: #3498db;
             color: white;
             text-decoration: none;
+        }
+
+        .arxiv-link {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .arxiv-link:hover {
+            background-color: #66bb6a;
+            color: white;
+            text-decoration: none;
+        }
+
+        .section-note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px 20px;
+            margin: 20px 0 30px 0;
+            font-style: italic;
+            color: #856404;
         }
 
         @media (max-width: 768px) {
@@ -181,6 +228,11 @@
 
             .contact-info {
                 padding: 20px;
+            }
+
+            .cv-links a {
+                display: block;
+                margin: 10px 0;
             }
         }
     </style>
@@ -204,11 +256,17 @@
     <div class="contact-info">
         <p>Department of Mathematics, Yale University<br>
         P.O. Box 208283<br>
-        219 Prospect Street, New Haven CT 06520<br>
+        10 Hillhouse Ave, New Haven, CT 06520<br>
         USA</p>
         <p><strong>Email:</strong> alexander.goncharov@yale.edu</p>
         <p><strong>Phone:</strong> (203) 432-4192</p>
-        <p><strong>Office:</strong> 717 Kline Tower, New Haven CT 06511, USA</p>
+        <p><strong>Office:</strong> 212A LOM</p>
+    </div>
+
+    <div class="cv-links">
+        <a href="CV.pdf">Curriculum Vitae (PDF)</a>
+        <a href="https://scholar.google.com/citations?user=DjEuU1oAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        <a href="https://arxiv.org/search/?searchtype=author&query=Goncharov%2C+A" target="_blank">arXiv Papers</a>
     </div>
 
     <div class="photo-section">
@@ -219,7 +277,78 @@
     <h2>Selected Talks</h2>
 
     <h2>Publications</h2>
-    <p style="font-style: italic; color: #666; margin-bottom: 30px;">Publications not available in the arXiv</p>
+
+    <h3>Selected Recent Papers (on arXiv)</h3>
+    
+    <ul class="publications">
+        <li>
+            <strong>Spectral description of non-commutative local systems on surfaces and non-commutative cluster varieties</strong>
+            <div class="publication-details">
+                With V. Fock (2021)
+                <a href="https://arxiv.org/abs/2108.04168" class="arxiv-link" target="_blank">arXiv:2108.04168</a>
+            </div>
+        </li>
+        
+        <li>
+            <strong>Quantum geometry of moduli spaces of local systems and representation theory</strong>
+            <div class="publication-details">
+                With L. Shen (2019)
+                <a href="https://arxiv.org/abs/1904.10491" class="arxiv-link" target="_blank">arXiv:1904.10491</a>
+            </div>
+        </li>
+        
+        <li>
+            <strong>The Galois group of the category of mixed Hodge-Tate structures</strong>
+            <div class="publication-details">
+                With J. Horel (2017)
+                <a href="https://arxiv.org/abs/1705.08175" class="arxiv-link" target="_blank">arXiv:1705.08175</a>
+            </div>
+        </li>
+        
+        <li>
+            <strong>Motivic Amplitudes and Cluster Coordinates</strong>
+            <div class="publication-details">
+                With J. Golden, M. Spradlin, C. Vergu, A. Volovich (2014)
+                <a href="https://arxiv.org/abs/1305.1617" class="arxiv-link" target="_blank">arXiv:1305.1617</a>
+            </div>
+        </li>
+        
+        <li>
+            <strong>Geometry of canonical bases and mirror symmetry</strong>
+            <div class="publication-details">
+                With L. Shen (2013)
+                <a href="https://arxiv.org/abs/1309.5922" class="arxiv-link" target="_blank">arXiv:1309.5922</a>
+            </div>
+        </li>
+        
+        <li>
+            <strong>Cluster ensembles, quantization and the dilogarithm</strong>
+            <div class="publication-details">
+                With V. Fock (2003), Annales Scientifiques de l'École Normale Supérieure
+                <a href="https://arxiv.org/abs/math/0311245" class="arxiv-link" target="_blank">arXiv:math/0311245</a>
+            </div>
+        </li>
+        
+        <li>
+            <strong>Moduli spaces of local systems and higher Teichmüller theory</strong>
+            <div class="publication-details">
+                With V. Fock (2006), Publications Mathématiques de l'IHÉS
+                <a href="https://arxiv.org/abs/math/0311149" class="arxiv-link" target="_blank">arXiv:math/0311149</a>
+            </div>
+        </li>
+        
+        <li>
+            <strong>Groupes fondamentaux motiviques de Tate mixte</strong>
+            <div class="publication-details">
+                With P. Deligne (2005), Annales Scientifiques de l'École Normale Supérieure
+                <a href="https://arxiv.org/abs/math/0302267" class="arxiv-link" target="_blank">arXiv:math/0302267</a>
+            </div>
+        </li>
+    </ul>
+
+    <div class="section-note">
+        <strong>Note:</strong> The following publications are not available on the arXiv. PDF files are provided where available.
+    </div>
 
     <h3>A) Selected publications on zeta-functions, mixed motives, and motivic Galois groups</h3>
     
@@ -339,7 +468,7 @@
             <strong>Integral Geometry on families of surfaces in the space</strong>
             <div class="publication-details">
                 Journal of Geometry and Physics, 1988, vol 4, N5, p. 571-593
-                <a href="IntegralGeometrySurfaces.pdf" class="pdf-link">PDF</a>
+                <a href="IntegralGeomnetrySurfaces.pdf" class="pdf-link">PDF</a>
             </div>
         </li>
         
